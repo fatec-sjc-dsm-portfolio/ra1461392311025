@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio Simples</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.3/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Removido o style embutido para evitar conflito com style.css -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <button id="toggle-dark" class="fixed top-4 right-4 z-50 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 rounded-full p-2 shadow-md focus:outline-none transition-colors" title="Alternar modo claro/escuro" aria-label="Alternar modo claro/escuro">
+      <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 block dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m8.66-12.66l-.71.71M4.05 19.07l-.71.71M21 12h-1M4 12H3m16.66 4.66l-.71-.71M4.05 4.93l-.71-.71M12 7a5 5 0 100 10 5 5 0 000-10z" /></svg>
+      <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" /></svg>
+    </button>
+  <div class="tablet-frame">
+      <div class="browser-bar mb-0">
+        <div class="browser-bar-left">
+          <span class="browser-dot dot-red"></span>
+          <span class="browser-dot dot-yellow"></span>
+          <span class="browser-dot dot-green"></span>
+          <span class="browser-url">portfolio.local</span>
+        </div>
+        <div class="browser-tabs" id="tabs">
+          <button class="browser-tab active" data-tab="inicio">Início</button>
+          <button class="browser-tab" data-tab="sobre">Sobre mim</button>
+          <button class="browser-tab" data-tab="projetos">Projetos</button>
+        </div>
+      </div>
+      <div class="tablet-content">
+        <div class="tablet-content">
+        <div id="tab-content" class="flex-1 w-full h-full">
+          <section id="inicio" class="tab-section w-full h-full flex flex-col">
+            <div class="flex-1 flex flex-col justify-center items-center w-full h-full overflow-auto">
+              <div class="max-w-2xl w-full px-4 py-6 md:py-10 space-y-6">
+                <div class="caixinha rounded-2xl bg-white dark:bg-zinc-900 shadow p-5 flex flex-col gap-2 mb-6">
+                  <div class="balao-exemplo bg-gray-900 text-white dark:bg-black dark:text-white p-6 flex flex-col gap-2 mb-0 border-none shadow-lg" style="text-align:left;">
+                    <div class="titulo-principal flex items-center"><span class="prompt-symbol" style="color:#888;margin-right:0.5em;font-size:1.1em;">&gt;</span>Portfólio - Bruno Fernandes Campos</div>
+                    <div class="titulo-terciario flex items-center"><span class="prompt-symbol" style="color:#888;margin-right:0.5em;">&gt;</span>Curso: <span class="font-semibold">Desenvolvimento de Software Multiplataforma</span></div>
+                    <div class="titulo-label flex items-center"><span class="prompt-symbol" style="color:#888;margin-right:0.5em;">&gt;</span>Fatec São José dos Campos - Jessen Vidal</div>
+                    <div class="sumario-label flex items-center mt-2"><span class="prompt-symbol" style="color:#888;margin-right:0.5em;">&gt;</span>Sumário</div>
+                    <div class="leading-relaxed">
+                      <p>Sou desenvolvedor de software com interesse em desenvolvimento web, mobile e frontend. Atualmente focado em projetos acadêmicos e pessoais, buscando constantemente aprimorar minhas habilidades técnicas e contribuir com soluções funcionais e bem estruturadas.</p>
+                      <p>Atualmente no <span class="font-semibold">sexto semestre</span> do curso, participo dos projetos integrados chamados de <span class="font-semibold">A.P.I (Aprendizado por Projeto Integrado)</span>, que envolvem múltiplas matérias e promovem tanto o desenvolvimento técnico quanto de soft skills.</p>
+                      <p>Os projetos listados na aba seguinte são fruto dessas experiências, desenvolvidos em grupo com colegas ao longo de cada semestre.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="sobre" class="tab-section hidden w-full h-full flex flex-col">
+            <div class="flex-1 flex flex-col justify-center items-center w-full h-full overflow-auto">
+              <div class="max-w-2xl w-full px-4 py-6 md:py-10 space-y-6">
+                <div class="caixinha rounded-2xl bg-white dark:bg-zinc-900 shadow p-5 flex flex-col gap-2 mb-6">
+                  <div class="balao-exemplo p-6 flex flex-col gap-2 mb-0 border-none shadow-lg" style="text-align:left; overflow-y:auto; max-height:60vh;">
+                    <div class="titulo-principal flex items-center"><span class="prompt-symbol" style="color:#888;margin-right:0.5em;font-size:1.1em;">&gt;</span>Sobre mim</div>
+                    <div class="titulo-secundario flex items-center"><span class="prompt-symbol" style="color:#888;margin-right:0.5em;">&gt;</span>Bruno Fernandes Campos</div>
+                    <div class="titulo-terciario flex items-center"><span class="prompt-symbol" style="color:#888;margin-right:0.5em;">&gt;</span>Bio: <span class="font-semibold">Estudante e desenvolvedor apaixonado por tecnologia</span></div>
+                    <div class="titulo-label flex items-center"><span class="prompt-symbol" style="color:#888;margin-right:0.5em;">&gt;</span>Contato: brunofercam@gmail.com</div>
+                    <div class="sumario-label flex items-center mt-2"><span class="prompt-symbol" style="color:#888;margin-right:0.5em;">&gt;</span>Resumo</div>
+                    <div class="leading-relaxed">
+                      <p>Meu nome é Bruno Fernandes Campos. Sou natural de São José dos Campos, e desde criança, sempre fui muito ligado á tecnologia, sempre me envolvendo e tentando conhecer mais, principalmente por meio de jogos eletrônicos.</p>
+                      <br>
+                      <p>No meu primeiro ano do ensino médio, em uma época onde morava em Minas Gerais, passei no concurso para o curso técnico do Instituto Federal (IFMG). Lá, cursei o primeiro ano em informática, tendo assim meu primeiro contato com programação, diferentes linguagens, lógica, e manutenção de computadores. Contudo, devido á motivos familiares, fui obrigado a abandonar o curso depois do primeiro ano, retornando a um ensino convencional para o restante do ensino médio.</p>
+                      <br>
+                      <p>Em 2023, após terminar o ensino médio, fiz o vestibular para o curso de desenvolvimento de software multiplataforma da Fatec São José dos Campos, e consegui passar depois de um bom tempo de estudo aplicado. O curso me chamou bastante a atenção, já que tinha um foco muito parecido com o motivo que decidi seguir nessa área: O desenvolvimento de jogos. Outros cursos na área eram muito mais focados em programação de sistemas, e não me interessavam tanto.</p>
+                      <br>
+                      <p>🎓 Estudante de Desenvolvimento de Software Multiplataforma.</p>
+                      <p>🛠️ Tenho interesse por desenvolvimento de APIs, aplicações mobile e Experiência do Usuário.</p>
+                      <p>💡 Estou sempre em busca de aprendizado contínuo e boas práticas de desenvolvimento.</p>
+                      <p>Além da vida acadêmica, gosto de explorar novas ferramentas, frameworks e metodologias que me ajudem a criar soluções funcionais, eficientes e com uma boa experiência de uso.</p>
+                    </div>
+                    <div class="mt-4 text-center">
+                      <a target="_blank" href="https://www.linkedin.com/in/bruno-campos-97560b231/" class="underline text-blue-600 hover:text-blue-800">Linkedin</a> |
+                      <a target="_blank" href="https://github.com/BrunoFerCam" class="underline text-blue-600 hover:text-blue-800">Github</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="projetos" class="tab-section hidden w-full h-full flex flex-col">
+            <div class="flex-1 flex flex-col justify-center items-center w-full h-full overflow-auto">
+              <div class="max-w-2xl w-full px-4 py-6 md:py-10 space-y-6">
+                <!-- Navbarzinha interna -->
+                <div class="mb-4 flex gap-2">
+                  <button class="projeto-tab projeto-navbar-tab active" data-projeto="bettercallus">Covid Longa</button>
+                  <button class="projeto-tab projeto-navbar-tab" data-projeto="em-breve" disabled style="opacity:0.5;cursor:not-allowed;">Em breve</button>
+                </div>
+                <!-- Conteúdo de cada projeto -->
+                <div id="projeto-bettercallus" class="projeto-tab-content caixinha rounded-2xl bg-white dark:bg-zinc-900 shadow p-5 flex flex-col gap-2 mb-6">
+                  <div class="balao-exemplo p-6 flex flex-col gap-2 mb-0 border-none shadow-lg" style="text-align:left; overflow-y:auto; max-height:60vh;">
+                    <h4 id="1-semestre" class="titulo-principal">Sistema de análise de dados relacionados à Covid Longa</h4>
+                    <p>O primeiro projeto criado por nós tinha um foco na coleta e processamento de dados do Covid-19 e como ele impactava vítimas á longo prazo. Fizemos isso criando um site que permitisse que o usuário visualizasse os dados de sintomas que pudessem ou não serem relacionados á chamada de "covid longa", série de sintomas que persistem mesmo depois do fim do ciclo da doença.</p>
+                    <br>
+                    <p>O método usado foi o da raspagem de dados, á partir dos dados do site de saúde pública TabNet, que disponibiliza dados de saúde pública do Brasil. O alvo das análises foram cidades do vale do Paraíba, região onde a faculdade se encontra.</p>
+                    <br>
+                    <p>Foram utilizadas várias tecnologias nesse primeiro projeto, como HTML, CSS, e React para a construção da página, e Python para a realização da raspagem de dados. Também foi utilizado o Github para a organização do projeto, e o Figma para a geração do wireframe.</p>
+                    <div class="flex flex-wrap gap-2 my-2">
+                      <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS"/>
+                      <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML"/>
+                      <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Figma"/>
+                      <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+                      <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+                      <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask"/>
+                    </div>
+                    <h3 class="mt-4 mb-2 font-bold text-lg">Projeto final:</h3>
+                    <img src="./assets/covidlonga.gif" style="width: 50%; max-width:350px; border-radius:0.5rem;" alt="Gif Projeto1">
+                    <h4 class="mt-4 titulo-secundario">Minhas contribuições ao projeto:</h4>
+                    <p>Como meu primeiro projeto na fatec, foi um processo um pouco confuso na hora da distribuição e organização dos membros. Contudo, terminei ficando com a principal tarefa de desenvolvimento do wireframe da interface do site, e depois implementação desse wireframe no site em si. </p>
+                    <br>
+                    <p>Foi um processo muito recompensador, já que para mim, a parte mais interessante de se criar um site é a estética e experiência do usuário. Então, tendo terminado no frontend do projeto, pude ampliar meus conhecimentos nessa área e colocar em prática o que aprendi. Esse projeto dependeu bem pouco do backend, então não tive muito contato com linguagens que não fossem de marcação. </p>
+                    <br>
+                    <h4 class="mt-4 titulo-secundario">O que aprendi:</h4>
+                    <ul class="list-disc ml-6">
+                      <li>Funcionalidades básicas de ferramentas como o Figma e o Github.</li>
+                      <li>O processo de criação de páginas usando o HTML e o CSS, colocando em prática todas as heurísticas de design que eu conhecia até ali.</li>
+                      <li>Como funciona o método ágil para a elaboração de um projeto.</li>
+                    </ul>
+                    <h4 class="mt-4 titulo-secundario">Hard Skills:</h4>
+                    <table class="my-2 text-sm" align="center">
+                        <tr>
+                          <th width="300px">Tecnologia</th>
+                          <th width="300px">Classificação</th>
+                        </tr>
+                        <tr>
+                          <td>Git / Github</td>
+                          <td>Uso sem dificuldade superficialmente.</td>
+                        </tr>
+                        <tr>
+                          <td>Python</td>
+                          <td>Consigo criar e compreender funções simples e medianas.</td>
+                        </tr>
+                        <tr>
+                          <td>Flask</td>
+                          <td>Consigo usar para criar sites simples com o apoio dos outros membros.</td>
+                        </tr>
+                        <tr>
+                          <td>Html</td>
+                          <td>Bem versado nesta área, consigo criar páginas complexas com várias funcionalidades.</td>
+                        </tr>
+                        <tr>
+                          <td>Css</td>
+                          <td>Uso a tecnologia em conjunto com o HTML para criar páginas web agradáveis aos clientes.</td>
+                        </tr>
+                        <tr>
+                          <td>Figma</td>
+                          <td>Bem versado em criar os wireframes que servem como planta do site.</td>
+                        </tr>
+                    </table>
+                    <h4 class="mt-4 titulo-secundario">Soft Skills:</h4>
+                    <p>Durante minha jornada acadêmica e projetos realizados, desenvolvi diversas soft skills que foram fundamentais para meu aprendizado e evolução. Aprendi a importância de trabalhar com metodologias ágeis, compreendendo o funcionamento do sistema de desenvolvimento ágil e a necessidade de uma comunicação clara e eficiente entre os membros da equipe. Além disso, aperfeiçoei minha organização e planejamento, aplicando ferramentas como tasks da sprint e técnicas como o planning poker, que ajudaram a estruturar melhor as etapas de desenvolvimento.</p>
+                    <br>
+                    <p>Outro aspecto marcante foi a adaptação ao estilo de ensino da Fatec, um método mais inovador e não ortodoxo em comparação com minhas experiências anteriores. Essa adaptação exigiu resiliência e flexibilidade, contribuindo para minha capacidade de enfrentar novos desafios e me ajustar a diferentes contextos acadêmicos e profissionais.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+    <script>
+      // Tabs internas dos projetos (corrigido para não interferir nas tabs principais)
+      function setupProjetoTabs() {
+        const projetosSection = document.getElementById('projetos');
+        if (!projetosSection) return;
+        const projetoTabs = projetosSection.querySelectorAll('.projeto-navbar-tab');
+        const projetoContents = projetosSection.querySelectorAll('.projeto-tab-content');
+        projetoTabs.forEach(tab => {
+          tab.addEventListener('click', function(e) {
+            e.preventDefault();
+            if(tab.disabled) return;
+            projetoTabs.forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+            const projeto = tab.getAttribute('data-projeto');
+            projetoContents.forEach(content => {
+              content.style.display = content.id === 'projeto-' + projeto ? '' : 'none';
+            });
+          });
+        });
+      }
+      setupProjetoTabs();
+      // Tabs logic
+      const tabBtns = document.querySelectorAll('.browser-tab');
+      const tabSections = document.querySelectorAll('.tab-section');
+      tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          tabBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          const tab = btn.getAttribute('data-tab');
+          tabSections.forEach(section => {
+            section.classList.toggle('hidden', section.id !== tab);
+          });
+        });
+      });
+      // Dark mode logic
+      const html = document.documentElement;
+      const darkBtn = document.getElementById('toggle-dark');
+      function setDarkMode(on) {
+        if (on) {
+          html.classList.add('dark');
+          localStorage.setItem('theme', 'dark');
+        } else {
+          html.classList.remove('dark');
+          localStorage.setItem('theme', 'light');
+        }
+      }
+      // Detect system preference
+      if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        setDarkMode(true);
+      }
+      if (darkBtn) {
+        darkBtn.addEventListener('click', () => {
+          setDarkMode(!html.classList.contains('dark'));
+        });
+      }
+    </script>
+  </body>
+</html>
