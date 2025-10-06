@@ -129,7 +129,7 @@
   margin: 1.2rem 0;
   color: #23232b;
   font-size: 1.08rem;
-  font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', monospace;
+  font-family: 'IBM Plex Sans', 'Consolas', 'Menlo', 'Monaco', monospace;
   border: none;
   box-shadow: 0 2px 12px 0 rgba(0,0,0,0.10);
   position: relative;
@@ -185,8 +185,8 @@ body {
   background-size: 24px 24px;
   background-position: 0 0, 12px 12px;
   transition: background-color 0.3s;
-  font-family: 'Inter', system-ui, sans-serif;
-  overflow-y: auto;
+  font-family: 'JetBrains Mono', system-ui, sans-serif;
+  overflow: hidden;
 }
 .dark body {
   background-color: #18181b;
