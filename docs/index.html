@@ -91,6 +91,8 @@
                   <button class="projeto-tab projeto-navbar-tab active" data-projeto="covidlonga">Covid Longa</button>
                   <button class="projeto-tab projeto-navbar-tab" data-projeto="bettercallus">Better Call Us</button>
                   <button class="projeto-tab projeto-navbar-tab" data-projeto="sga">SGA</button>
+                  <button class="projeto-tab projeto-navbar-tab" data-projeto="meteorological">Meteorological</button>
+                  <button class="projeto-tab projeto-navbar-tab" data-projeto="plataforma-agentes">Plataforma de Agentes</button>
                 </div>
                 <!-- Conteúdo de cada projeto -->
                 <div id="projeto-covidlonga" class="projeto-tab-content caixinha rounded-2xl bg-white dark:bg-zinc-900 shadow p-5 flex flex-col gap-2 mb-6">
@@ -213,7 +215,6 @@
                     <br>
                     <p>Também tive que dessa vez fazer contribuições ao backend para finalizar minhas tarefas, mesmo que não tenha tido que entrar em tanto contato com a lógica do backend, tive que entender como ele funcionava para poder implementar o front-end de forma correta.</p>
                     <h3 class="mt-4 mb-2 font-bold text-lg">Projeto final:</h3>
-                    <img src="./assets/titlescreen.png" style="width: 50%; max-width:350px; border-radius:0.5rem;" alt="Imagem Projeto SGA">
                     <h4 class="mt-4 titulo-secundario">Aprendizados:</h4>
                     <p><strong>Técnicos:</strong></p>
                     <ul class="list-disc ml-6 mb-4">
@@ -231,6 +232,88 @@
                     <p>Durante este projeto, aprimorei minhas habilidades em comunicação com o cliente, aprendendo a importância de estabelecer metas plausíveis e definir entregas claras e objetivas. Essa prática foi essencial para alinhar expectativas e garantir a satisfação do cliente ao longo do processo.</p>
                     <p>Também desenvolvi um entendimento mais aprofundado sobre a importância da documentação e organização de tasks. Percebi como essas ferramentas podem ser vitais para o equilíbrio das atividades entre os membros da equipe, permitindo uma distribuição mais eficiente das tarefas e promovendo um fluxo de trabalho mais colaborativo.</p>
                     <p>Além disso, tive a oportunidade de melhorar minha comunicação com a equipe, o que contribuiu para fortalecer o alinhamento entre os membros e aumentar a fluidez no desenvolvimento do projeto. Essa experiência reforçou como uma comunicação aberta e eficiente é essencial para o sucesso de qualquer iniciativa em grupo.</p>
+                  </div>
+                </div>
+
+                <!-- Projeto 4: Meteorological Data Collector -->
+                <div id="projeto-meteorological" class="projeto-tab-content caixinha rounded-2xl bg-white dark:bg-zinc-900 shadow p-5 flex flex-col gap-2 mb-6" style="display: none;">
+                  <div class="balao-exemplo p-6 flex flex-col gap-2 mb-0 border-none shadow-lg" style="text-align:left; overflow-y:auto; max-height:60vh;">
+                    <h4 class="titulo-principal">Meteorological Data Collector</h4>
+                    <p>O <strong>Meteorological Data Collector</strong> foi desenvolvido para coletar, exibir e gerenciar dados meteorológicos em uma interface simples e intuitiva. Além disso, o projeto inclui um sistema de ensino básico, focado em introduzir conceitos matemáticos relacionados à meteorologia, como média aritmética, regra de três e gráficos.</p>
+                    <br>
+                    <p>O sistema exibe informações meteorológicas em tempo real, como temperatura, umidade e velocidade do vento, extraídas de uma API externa. Esses dados são organizados em gráficos e tabelas para fácil análise. Já a parte educacional conta com módulos interativos para aprendizado, com exercícios práticos e material didático diretamente relacionados aos dados meteorológicos apresentados.</p>
+                    <br>
+                    <p>Para a implementação do projeto, utilizamos tecnologias como React e TypeScript no front-end, Node.js para a criação da API do sistema, e Docker para containerização e deploy. O Google Cloud foi usado como infraestrutura para hospedar e escalar a aplicação. Também fiquei responsável pelo sistema de educação necessário para a página.</p>
+                    <div class="flex flex-wrap gap-2 my-2">
+                      <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS"/>
+                      <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL"/>
+                      <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js"/>
+                      <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React"/>
+                      <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
+                      <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Figma"/>
+                      <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+                      <img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white" alt="Spring"/>
+                      <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/>
+                      <img src="https://img.shields.io/badge/Google%20Cloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" alt="Google Cloud"/>
+                    </div>
+                    <h3 class="mt-4 mb-2 font-bold text-lg">Projeto final:</h3>
+                    <img src="./assets/titlescreen.png" style="width: 50%; max-width:350px; border-radius:0.5rem;" alt="Imagem Projeto Meteorological">
+                    <h4 class="mt-4 titulo-secundario">Minhas contribuições ao projeto:</h4>
+                    <p>Minha principal responsabilidade foi o desenvolvimento completo do front-end, do sistema educacional e da integração com APIs externas para captura de dados meteorológicos em tempo real. Trabalhei na coleta, normalização e pré-processamento dos dados recebidos, criei componentes reutilizáveis para as visualizações (gráficos de séries temporais, histogramas e mapas de calor) e implementei módulos interativos de ensino que explicam conceitos matemáticos usados nas análises.</p>
+                    <p>No front-end, priorizei performance e acessibilidade: buffers e debounce foram usados para chamadas à API; lazy-loading em componentes gráficos reduziu o consumo de memória; e as visualizações foram desenhadas com atenção à leitura por cores e suporte a leitores de tela. Também colaborei na criação do wireframe e prototipagem no Figma, definindo fluxos de usuário e interações didáticas.</p>
+                    <p>No backend e infraestrutura, participei da definição das rotas da API que expunham dados agregados, além de criar Dockerfiles para ambientes de desenvolvimento e produção e configurar pipelines básicas de CI/CD para deploy no Google Cloud.</p>
+                    <br>
+                    <h4 class="mt-4 titulo-secundario">Aprendizados:</h4>
+                    <p><strong>Técnicos:</strong></p>
+                    <ul class="list-disc ml-6 mb-4">
+                      <li>Desenvolvimento de aplicações data-driven com React e TypeScript, incluindo componentes de visualização reutilizáveis</li>
+                      <li>Integração e normalização de dados de APIs em tempo real, tratamento de latência e erros</li>
+                      <li>Criação de gráficos interativos e técnicas de visualização para dados meteorológicos</li>
+                      <li>Docker, criação de imagens e deploy em Google Cloud com pipelines simples de CI/CD</li>
+                      <li>Prototipagem e validação de UX com Figma para fluxos educacionais</li>
+                    </ul>
+                    <p><strong>Comportamentais:</strong></p>
+                    <p>O projeto reforçou práticas de documentação, planejamento e comunicação entre equipes multidisciplinares; melhorou minha capacidade de traduzir requisitos científicos em interfaces didáticas; e aumentou minha experiência em dividir trabalho em entregáveis testáveis para integração contínua.</p>
+                  </div>
+                </div>
+
+                <!-- Projeto 5: Plataforma de Criação e Gerenciamento de Agentes de IA -->
+                <div id="projeto-plataforma-agentes" class="projeto-tab-content caixinha rounded-2xl bg-white dark:bg-zinc-900 shadow p-5 flex flex-col gap-2 mb-6" style="display: none;">
+                  <div class="balao-exemplo p-6 flex flex-col gap-2 mb-0 border-none shadow-lg" style="text-align:left; overflow-y:auto; max-height:60vh;">
+                    <h4 class="titulo-principal">Plataforma de Criação e Gerenciamento de Agentes de IA</h4>
+                    <p>O quinto projeto teve como foco resolver um problema comum em empresas de tecnologia: a dificuldade de centralizar e distribuir conhecimento sobre seus próprios sistemas, processos internos e regras de negócio. A solução proposta foi a criação de uma plataforma que permite o desenvolvimento e gerenciamento de múltiplos agentes de Inteligência Artificial, cada um com um conjunto específico de conhecimentos sobre áreas distintas da empresa.</p>
+                    <br>
+                    <p>Além disso, o sistema conta com um esquema de permissões: cada usuário tem acesso apenas aos agentes autorizados pelo administrador, garantindo organização e segurança na distribuição das informações.</p>
+                    <div class="flex flex-wrap gap-2 my-2">
+                      <img src="https://img.shields.io/badge/React%20Native-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React Native"/>
+                      <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
+                      <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js"/>
+                      <img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white" alt="Spring"/>
+                      <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL"/>
+                      <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/>
+                      <img src="https://img.shields.io/badge/Google%20Cloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" alt="Google Cloud"/>
+                      <img src="https://img.shields.io/badge/WebSocket-4A90E2?style=for-the-badge&logo=socketdotio&logoColor=white" alt="WebSocket"/>
+                      <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+                      <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Figma"/>
+                    </div>
+                    <h3 class="mt-4 mb-2 font-bold text-lg">Projeto final:</h3>
+                    <a href="https://www.youtube.com/watch?v=Vcj0OSQSGQQ" target="_blank"><img src="https://img.youtube.com/vi/Vcj0OSQSGQQ/maxresdefault.jpg" style="width:50%; max-width:350px; border-radius:0.5rem;" alt="Vídeo do Projeto"></a>
+                    <h4 class="mt-4 titulo-secundario">Minhas contribuições ao projeto:</h4>
+                    <p>Neste projeto, atuei como <strong>principal responsável pelo desenvolvimento do front-end mobile</strong>. Criei as telas, fluxos e interações do aplicativo com foco na experiência do usuário, acessibilidade e eficiência em redes móveis. Trabalhei com React Native e TypeScript para implementar o chat inteligente, lidando com eventos em tempo real, reconexão automática e otimização do consumo de dados em conexões lentas.</p>
+                    <p>Implementei a camada de sincronização com os agentes de IA via WebSocket, incluindo mecanismos de enfileiramento de mensagens, confirmação de entrega e tratamento de conflitos em mensagens offline. Também projetei e integrei a lógica de permissões que controla o acesso a agentes específicos, garantindo que usuários só possam invocar agentes autorizados por suas roles.</p>
+                    <p>Além do front-end, participei das decisões de arquitetura que impactaram o backend (endpoints, contratos de mensagens e autenticação), e implementei testes end-to-end para fluxos críticos do chat e permissões.</p>
+                    <br>
+                    <h4 class="mt-4 titulo-secundario">Aprendizados:</h4>
+                    <p><strong>Técnicos:</strong></p>
+                    <ul class="list-disc ml-6 mb-4">
+                      <li>Desenvolvimento mobile com React Native e TypeScript: boas práticas para performance e consumo de dados</li>
+                      <li>Integração de chats em tempo real com WebSocket: reconexão, filas e confirmação de entrega</li>
+                      <li>Design e implementação de sistemas de permissões e controle de acesso</li>
+                      <li>Testes end-to-end e integração contínua para fluxos críticos</li>
+                      <li>Práticas de deploy com Docker e Google Cloud</li>
+                    </ul>
+                    <p><strong>Comportamentais:</strong></p>
+                    <p>Assumi maior autonomia técnica, melhorei comunicação entre equipes e refinei a definição de requisitos para fluxos complexos, aprendendo a mapear casos de borda e priorizar entregas que reduzem risco para o produto.</p>
                   </div>
                 </div>
               </div>
